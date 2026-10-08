@@ -1,0 +1,16 @@
+divisor_id,panel,statistic,calibration,checkpoint_seed,excluded_replicate,divisor,membership_count
+d11_exclude_-1,example,S,arithmetic,11,-1,4.5,8
+d11_exclude_0,example,S,arithmetic,11,0,5.5,6
+d11_exclude_1,example,S,arithmetic,11,1,4.833333333333333,6
+d11_exclude_2,example,S,arithmetic,11,2,4.166666666666667,6
+d11_exclude_3,example,S,arithmetic,11,3,3.5,6
+d31_exclude_-1,example,S,arithmetic,31,-1,5.625,8
+d31_exclude_0,example,S,arithmetic,31,0,6.666666666666667,6
+d31_exclude_1,example,S,arithmetic,31,1,6.0,6
+d31_exclude_2,example,S,arithmetic,31,2,5.333333333333333,6
+d31_exclude_3,example,S,arithmetic,31,3,4.5,6
+d71_exclude_-1,example,S,arithmetic,71,-1,6.0,8
+d71_exclude_0,example,S,arithmetic,71,0,7.5,6
+d71_exclude_1,example,S,arithmetic,71,1,6.833333333333333,6
+d71_exclude_2,example,S,arithmetic,71,2,5.666666666666667,6
+d71_exclude_3,example,S,arithmetic,71,3,4.0,6

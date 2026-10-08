@@ -1,0 +1,5 @@
+# Numerical reproduction only; versions match the original uv.lock.
+numpy==2.3.2
+pandas==2.3.1
+scipy==1.16.1
+PyYAML==6.0.2

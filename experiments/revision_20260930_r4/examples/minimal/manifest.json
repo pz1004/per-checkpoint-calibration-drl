@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "horizon": 4,
+  "miss_delay": 5,
+  "tables": {
+    "streams": "streams.csv",
+    "divisors": "divisors.csv",
+    "memberships": "memberships.csv",
+    "calibration": "calibration.csv",
+    "targets": "targets.csv",
+    "points": "points.csv"
+  }
+}

@@ -1,0 +1,443 @@
+{
+  "calibration_functional": "maximum_over_calibration_checkpoints",
+  "checkpoints": 20,
+  "environment": "Walker2d-v5",
+  "inputs": {
+    "icc_by_mode": {
+      "frozen": 0.7193109817374422,
+      "updating": 0.9372004190554168
+    },
+    "stage1_decision_sha256": "571728de85a133f4acb612207a18b615642ee3a4a4eedbc170db998ec2ba0bfc",
+    "stage1_streams_csv_sha256": "eb0e8719edb7afcff3825bf6240f4b971ea3cfba7d47d31a1f8bdf5b3c8b05bf"
+  },
+  "scale_estimator": "mean_of_own_stable_per_stream_maxima",
+  "seeds": [
+    800,
+    801,
+    802,
+    803,
+    804,
+    805,
+    806,
+    807,
+    808,
+    809,
+    810,
+    811,
+    812,
+    813,
+    814,
+    815,
+    816,
+    817,
+    818,
+    819
+  ],
+  "source": "stage 1 stable streams only; no changed stream existed",
+  "stage": "1_freeze",
+  "statistic": "positive_unknown_mean_glr_on_warmup_normalized_matched_score",
+  "status": "FROZEN",
+  "stopping_comparison": "strict_greater",
+  "thresholds": {
+    "800": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 67.81452004964481,
+      "scale_leave_one_replicate_out": {
+        "0": 54.64726651891501,
+        "1": 65.88339691034089,
+        "2": 72.92230445348841,
+        "3": 77.80511231583495
+      },
+      "scale_normalized_threshold_changed": 491.57498879421905,
+      "scale_normalized_threshold_stable": {
+        "0": 396.12798862256415,
+        "1": 477.5766321757746,
+        "2": 528.600378920767,
+        "3": 563.9949554577706
+      }
+    },
+    "801": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 401.54866143120256,
+      "scale_leave_one_replicate_out": {
+        "0": 407.39623310943216,
+        "1": 258.5080465906014,
+        "2": 503.9353686290338,
+        "3": 436.3549973957427
+      },
+      "scale_normalized_threshold_changed": 2910.7524258650405,
+      "scale_normalized_threshold_stable": {
+        "0": 2953.140397940855,
+        "1": 1873.87730552339,
+        "2": 3652.9348435331945,
+        "3": 3163.057156462721
+      }
+    },
+    "802": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 130.82207110293768,
+      "scale_leave_one_replicate_out": {
+        "0": 160.35071900575446,
+        "1": 100.9233043186181,
+        "2": 100.33820842984535,
+        "3": 161.6760526575329
+      },
+      "scale_normalized_threshold_changed": 948.305143048785,
+      "scale_normalized_threshold_stable": {
+        "0": 1162.3528831390965,
+        "1": 731.5744792292472,
+        "2": 727.3332266957714,
+        "3": 1171.9599831310252
+      }
+    },
+    "803": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 617.9038385526709,
+      "scale_leave_one_replicate_out": {
+        "0": 651.6400864704083,
+        "1": 793.2420498047495,
+        "2": 808.7765763350366,
+        "3": 217.95664160048923
+      },
+      "scale_normalized_threshold_changed": 4479.071330005307,
+      "scale_normalized_threshold_stable": {
+        "0": 4723.619189077084,
+        "1": 5750.065789132064,
+        "2": 5862.672716077193,
+        "3": 1579.9276257348854
+      }
+    },
+    "804": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 6940.121669022248,
+      "scale_full": 1774.2924794942196,
+      "scale_leave_one_replicate_out": {
+        "0": 2291.0955037483823,
+        "1": 2313.7060542908516,
+        "2": 2245.380773370294,
+        "3": 246.98758656735126
+      },
+      "scale_normalized_threshold_changed": 12861.51999728864,
+      "scale_normalized_threshold_stable": {
+        "0": 16607.730110853972,
+        "1": 16771.629835004624,
+        "2": 16276.352434555618,
+        "3": 1790.3676087403471
+      }
+    },
+    "805": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 177.27009327264437,
+      "scale_leave_one_replicate_out": {
+        "0": 134.96559913952012,
+        "1": 176.92360273657152,
+        "2": 214.9725112852241,
+        "3": 182.21865992926178
+      },
+      "scale_normalized_threshold_changed": 1284.998316735956,
+      "scale_normalized_threshold_stable": {
+        "0": 978.3408160382927,
+        "1": 1282.4866705389081,
+        "2": 1558.2962136831145,
+        "3": 1320.869566683509
+      }
+    },
+    "806": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 125.3922566470624,
+      "scale_leave_one_replicate_out": {
+        "0": 111.39320390597497,
+        "1": 155.94438832518463,
+        "2": 121.64971660038316,
+        "3": 112.58171775670678
+      },
+      "scale_normalized_threshold_changed": 908.9454162771794,
+      "scale_normalized_threshold_stable": {
+        "0": 807.468856547907,
+        "1": 1130.4122020970565,
+        "2": 881.8164315087043,
+        "3": 816.0841749550498
+      }
+    },
+    "807": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 607.0114234246716,
+      "scale_leave_one_replicate_out": {
+        "0": 626.1141018823447,
+        "1": 741.982992304074,
+        "2": 318.53358427303885,
+        "3": 741.4150152392295
+      },
+      "scale_normalized_threshold_changed": 4400.114215207939,
+      "scale_normalized_threshold_stable": {
+        "0": 4538.586019504361,
+        "1": 5378.498304793158,
+        "2": 2308.9913930670314,
+        "3": 5374.381143467208
+      }
+    },
+    "808": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 112.51717406273163,
+      "scale_leave_one_replicate_out": {
+        "0": 78.57585134391245,
+        "1": 110.86085475707934,
+        "2": 124.81423918003482,
+        "3": 135.8177509698999
+      },
+      "scale_normalized_threshold_changed": 815.6163095831597,
+      "scale_normalized_threshold_stable": {
+        "0": 569.5819009793654,
+        "1": 803.6099554348207,
+        "2": 904.7554739216347,
+        "3": 984.5179079968178
+      }
+    },
+    "809": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 177.64756855849075,
+      "scale_leave_one_replicate_out": {
+        "0": 115.88838559895343,
+        "1": 148.76615925940422,
+        "2": 230.64712318331829,
+        "3": 215.28860619228695
+      },
+      "scale_normalized_threshold_changed": 1287.7345656878647,
+      "scale_normalized_threshold_stable": {
+        "0": 840.0536022444952,
+        "1": 1078.378539247417,
+        "2": 1671.9185937061334,
+        "3": 1560.5875275534122
+      }
+    },
+    "810": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 300.19317380176193,
+      "scale_leave_one_replicate_out": {
+        "0": 286.8765525728606,
+        "1": 316.2681089344705,
+        "2": 225.95835883686422,
+        "3": 371.6696748628524
+      },
+      "scale_normalized_threshold_changed": 2176.045129268375,
+      "scale_normalized_threshold_stable": {
+        "0": 2079.515390112486,
+        "1": 2292.569378823547,
+        "2": 1637.9306029428049,
+        "3": 2694.165145194663
+      }
+    },
+    "811": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 84.1981561030821,
+      "scale_leave_one_replicate_out": {
+        "0": 72.79005176670418,
+        "1": 81.3797326749358,
+        "2": 80.36333367013228,
+        "3": 102.25950630055615
+      },
+      "scale_normalized_threshold_changed": 610.3369545720655,
+      "scale_normalized_threshold_stable": {
+        "0": 527.6417035076494,
+        "1": 589.9067212814055,
+        "2": 582.5390317507419,
+        "3": 741.2603617484652
+      }
+    },
+    "812": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 154.26120600572858,
+      "scale_leave_one_replicate_out": {
+        "0": 158.70397728862432,
+        "1": 180.1713851635914,
+        "2": 169.89841530163577,
+        "3": 108.27104626906277
+      },
+      "scale_normalized_threshold_changed": 1118.21112290016,
+      "scale_normalized_threshold_stable": {
+        "0": 1150.4159551692073,
+        "1": 1306.0292482788905,
+        "2": 1231.5623783360334,
+        "3": 784.8369098165086
+      }
+    },
+    "813": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 6.974801188478213,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 957.4144958540625,
+      "scale_leave_one_replicate_out": {
+        "0": 1264.7758327070744,
+        "1": 1229.5380108640734,
+        "2": 113.2774275031635,
+        "3": 1222.0667123419387
+      },
+      "scale_normalized_threshold_changed": 6677.7757635491835,
+      "scale_normalized_threshold_stable": {
+        "0": 8821.559981123824,
+        "1": 8575.783179453876,
+        "2": 790.0875359768194,
+        "3": 8523.672357642216
+      }
+    },
+    "814": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 319.30744698585755,
+      "scale_leave_one_replicate_out": {
+        "0": 322.90409564271107,
+        "1": 369.2069671885999,
+        "2": 240.27287541666146,
+        "3": 344.84584969545784
+      },
+      "scale_normalized_threshold_changed": 2314.600981605056,
+      "scale_normalized_threshold_stable": {
+        "0": 2340.6724265094094,
+        "1": 2676.313430009068,
+        "2": 1741.6939020438997,
+        "3": 2499.7241678578466
+      }
+    },
+    "815": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 453.08032286887067,
+      "scale_leave_one_replicate_out": {
+        "0": 498.5734988186586,
+        "1": 246.73366976727024,
+        "2": 532.5130286372299,
+        "3": 534.5010942523239
+      },
+      "scale_normalized_threshold_changed": 3284.2959660275997,
+      "scale_normalized_threshold_stable": {
+        "0": 3614.067635005851,
+        "1": 1788.5270125367153,
+        "2": 3860.089047205356,
+        "3": 3874.5001693624777
+      }
+    },
+    "816": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 93.79520754061349,
+      "scale_leave_one_replicate_out": {
+        "0": 62.066177538549844,
+        "1": 114.65579463485516,
+        "2": 95.74701952487571,
+        "3": 102.71183846417323
+      },
+      "scale_normalized_threshold_changed": 679.9042161173567,
+      "scale_normalized_threshold_stable": {
+        "0": 449.9063107086379,
+        "1": 831.1187769457111,
+        "2": 694.0525423694593,
+        "3": 744.5392344456185
+      }
+    },
+    "817": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 77.78432205533193,
+      "scale_leave_one_replicate_out": {
+        "0": 76.26260001714715,
+        "1": 81.12555329941856,
+        "2": 81.93703655145312,
+        "3": 71.81209835330888
+      },
+      "scale_normalized_threshold_changed": 563.8442506814732,
+      "scale_normalized_threshold_stable": {
+        "0": 552.8135673805963,
+        "1": 588.0642217167084,
+        "2": 593.9465146273353,
+        "3": 520.5526990012527
+      }
+    },
+    "818": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 171.4722782247161,
+      "scale_leave_one_replicate_out": {
+        "0": 161.5398568457696,
+        "1": 163.03713348406,
+        "2": 142.91866559332206,
+        "3": 218.39345697571264
+      },
+      "scale_normalized_threshold_changed": 1242.971021325919,
+      "scale_normalized_threshold_stable": {
+        "0": 1170.97272472984,
+        "1": 1181.8262078209336,
+        "2": 1035.9911326673173,
+        "3": 1583.0940200855848
+      }
+    },
+    "819": {
+      "calibration_checkpoints": 19,
+      "calibration_streams": 152,
+      "normalized_foreign_threshold": 7.248816159641813,
+      "pooled_loco_threshold": 12375.337294684237,
+      "scale_full": 379.7714225183804,
+      "scale_leave_one_replicate_out": {
+        "0": 334.8757391786625,
+        "1": 360.63200767266204,
+        "2": 431.08383122699183,
+        "3": 392.49411199520506
+      },
+      "scale_normalized_threshold_changed": 2752.8932245213946,
+      "scale_normalized_threshold_stable": {
+        "0": 2427.452669630286,
+        "1": 2614.155124901663,
+        "2": 3124.8474419585227,
+        "3": 2845.1176615951063
+      }
+    }
+  }
+}

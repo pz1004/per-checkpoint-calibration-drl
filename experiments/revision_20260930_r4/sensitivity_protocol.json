@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "status": "frozen_before_results",
+  "name": "R4 finite-input sensitivity",
+  "seed": 20261006,
+  "bit_generator": "PCG64",
+  "joint_vectors": 100,
+  "magnitudes": [
+    0,
+    1e-06,
+    0.0001,
+    0.001,
+    0.01,
+    0.05
+  ],
+  "cases": [
+    "D:cut_search:pooled:zero:matched6",
+    "D:cut_search:arithmetic:original_caps:matched6",
+    "E:GLR:arithmetic:additional_2",
+    "E:GLR:geometric:additional_2",
+    "E:GLR:quantile90:additional_2"
+  ],
+  "controls": [
+    "loco",
+    "scaling_only"
+  ],
+  "omissions": {
+    "D": [
+      null
+    ],
+    "E": [
+      null,
+      808
+    ]
+  },
+  "scopes": [
+    "stable_only",
+    "stable_plus_primary"
+  ],
+  "primary_condition": "gradual_updating_down",
+  "stream_identity": "stream_key = panel:statistic:stream_id; sorted lexicographically for PCG64 draws",
+  "universe": "All original/additional stable and primary changed streams in D cut_search and E GLR. Joint vectors drawn once for sorted union; reuse across magnitudes, scopes, families, controls and omission fits. Stable-only masks changed-stream factors to one.",
+  "single_stream_selection": "Sorted union of baseline global/foreign calibration donor ties, binding-constraint tuning ties in every selected full/omitted paired fit, and all checkpoint-808 tuning records. One vector with u=+1 and one with u=-1 per selected stream; all others zero. Run both scopes, including their identical single-stream scenarios.",
+  "path_transform": "Multiply each complete available indexed statistic path by 1+epsilon*u. Keep abstentions and indices; derive maximum from the perturbed available values. Additional-stable paths are unavailable: multiply their maxima, never impute delays.",
+  "formulas": {
+    "pooled": "1",
+    "arithmetic": "numpy.mean(values)",
+    "geometric": "numpy.exp(numpy.mean(numpy.log(values)))",
+    "quantile90": "numpy.quantile(values,0.9,method=linear)"
+  },
+  "membership_order": "Preserve recorded memberships.csv row order for every six/eight-member formula; complete original-stable calibration; omit whole checkpoint without changing retained divisor memberships.",
+  "selection": "Stable-only fitting. Divide calibration maxima by recomputed full divisors; take maxima excluding target checkpoint. LOCO base=B_foreign*d_target; scaling-only base=d_target. For each fixed cap k select descending ratio position k+1 then max across constraints; increment multiplier toward +inf by nextafter until strict maximum>base*multiplier respects every cap. Reject invalid cap indices.",
+  "multiplication_order": "(B_foreign*d_target)*multiplier for LOCO; d_target*multiplier for scaling-only; binary64, no rounding before decisions.",
+  "exports": "All factors including one, recomputed divisors, fit summaries with all donor/boundary ties, primary and tuning paired decisions with available delays, signed crossing margin M-H and relative margin (M-H)/H. Other secondary changed records are not perturbation targets or reported sensitivity outcomes.",
+  "comparisons": "Scaling-only versus LOCO on identical IDs; omission versus full restricted to identical retained IDs for each control; fit changes versus zero baseline. Counts, sets, stable identities and available delays are distinct.",
+  "zero_gate": "Before nonzero scenarios, all selected full and omitted paired fits must exactly match historical reference binary64 thresholds, multipliers, candidates, ULP adjustments, global/foreign donor ties, boundary ties, all decisions and available delays; formulas reproduce supplied divisors exactly.",
+  "interpretation": "Finite-input sensitivity on processed statistics only. No probabilities, confidence intervals, worst-case guarantees, population rankings or end-to-end precision claim.",
+  "forbidden_actions": [
+    "training",
+    "simulation",
+    "raw scoring",
+    "detector fitting",
+    "changed-data tuning",
+    "editing historical numerical engines or schemas"
+  ]
+}

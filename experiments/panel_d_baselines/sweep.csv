@@ -1,0 +1,8 @@
+method,operating_point,operating_point_kind,false_alarms_frozen,false_alarms_updating,detections_abrupt_frozen_down,detections_abrupt_updating_down,detections_gradual_frozen_down,detections_gradual_updating_down,changed_detections,primary_detections,primary_mean_delay,mean_delay_abrupt_frozen_down,mean_delay_abrupt_updating_down,mean_delay_gradual_frozen_down,mean_delay_gradual_updating_down,matching_primary_reachable,matching_false_alarms_frozen,matching_false_alarms_updating
+normalized,,frozen,4,2,80,72,80,68,300,68,42.45,2.6875,31.025,14.3875,42.45,,,
+pooled,0.48082096733924234,multiplier on the checkpoint's pooled threshold,2,2,80,68,80,65,293,65,47.1875,3.25,36.0625,15.675,47.1875,True,3.0,4.0
+memoryless,45.181219786765126,global threshold on the statistic,3,2,76,18,76,17,187,17,71.6125,6.475,69.0,18.525,71.6125,True,28.0,33.0
+adwin,1.5375515796146348,global threshold on the statistic,0,2,79,78,79,76,312,76,52.7375,43.2375,45.475,44.4625,52.7375,True,0.0,1.0
+adwin_monitoring_only,1.0164096347135643,global threshold on the statistic,0,2,0,0,0,6,6,6,78.3375,81.0,81.0,81.0,78.3375,True,80.0,80.0
+watch,2819762239.7667456,global threshold on the statistic,2,2,0,0,0,0,0,0,81.0,81.0,81.0,81.0,81.0,True,61.0,73.0
+pooled_grid,0.514788,frozen,2,2,80,67,80,64,291,64,48.6,3.375,37.4625,16.0375,48.6,,,

@@ -1,0 +1,2 @@
+source_point_id,panel,statistic,calibration,family,budget,target_budget_policy,tuning_role,caps_json,include_control,include_influence
+minimal,example,S,arithmetic,example,zero,matched_six,original_stable,"{""frozen"":0,""updating"":0}",True,True

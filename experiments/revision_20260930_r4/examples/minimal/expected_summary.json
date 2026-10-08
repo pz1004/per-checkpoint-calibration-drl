@@ -1,0 +1,68 @@
+{
+  "operating_points": [
+    {
+      "rule": "loco",
+      "omitted_checkpoint": null,
+      "detections": 5,
+      "denominator": 12,
+      "stable_alarms": 0,
+      "delay": "unavailable"
+    },
+    {
+      "rule": "scaling_only",
+      "omitted_checkpoint": null,
+      "detections": 7,
+      "denominator": 12,
+      "stable_alarms": 0,
+      "delay": "unavailable"
+    },
+    {
+      "rule": "loco",
+      "omitted_checkpoint": 11,
+      "detections": 3,
+      "denominator": 8,
+      "stable_alarms": 0,
+      "delay": "unavailable"
+    },
+    {
+      "rule": "scaling_only",
+      "omitted_checkpoint": 11,
+      "detections": 4,
+      "denominator": 8,
+      "stable_alarms": 0,
+      "delay": "unavailable"
+    },
+    {
+      "rule": "loco",
+      "omitted_checkpoint": 31,
+      "detections": 4,
+      "denominator": 8,
+      "stable_alarms": 0,
+      "delay": "unavailable"
+    },
+    {
+      "rule": "scaling_only",
+      "omitted_checkpoint": 31,
+      "detections": 5,
+      "denominator": 8,
+      "stable_alarms": 0,
+      "delay": "unavailable"
+    },
+    {
+      "rule": "loco",
+      "omitted_checkpoint": 71,
+      "detections": 6,
+      "denominator": 8,
+      "stable_alarms": 0,
+      "delay": "unavailable"
+    },
+    {
+      "rule": "scaling_only",
+      "omitted_checkpoint": 71,
+      "detections": 6,
+      "denominator": 8,
+      "stable_alarms": 0,
+      "delay": "unavailable"
+    }
+  ]
+}

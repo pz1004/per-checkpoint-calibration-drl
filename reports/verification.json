@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "date": "2026-10-06",
+  "verification": "Numerical reproduction from a clean export of 127 public files; no manuscript/private records required. Final documentation receipt refresh leaves executed code and input bytes unchanged.",
+  "environment": {
+    "python": "3.11.8",
+    "packages": {
+      "numpy": "2.3.2",
+      "pandas": "2.3.1",
+      "scipy": "1.16.1",
+      "PyYAML": "6.0.2"
+    },
+    "setup": "Fresh isolated virtual environment installed from requirements.txt; CPU-only numerical run."
+  },
+  "requirements_sha256": "cb1440bf54b01916c303c55cd5bab1353ba367b52cf33de238679e7c0a2dfebd",
+  "reproduction_manifest_sha256": "842d41b395c37bc150dbc009c8ebda127954ce9feb85189e3e3f5b9526066b2b",
+  "public_files": 127,
+  "public_scientific_inputs": 104,
+  "new_public_files": [
+    "experiments/revision_20260930_r4/review_analysis.py",
+    "experiments/revision_20260930_r4/review_check.py",
+    "experiments/revision_20260930_r4/sensitivity_protocol.json"
+  ],
+  "private_manuscript_and_docs_absent_from_export": true,
+  "minimal_example": {
+    "operating_points": 8,
+    "checked_stream_decisions": 216
+  },
+  "full_run": {
+    "status": "PASS",
+    "mode": "full",
+    "exact_output_counts": {
+      "r3": 12,
+      "r4": 28,
+      "quantile": 19,
+      "diagnostic_inputs": 8,
+      "diagnostic": 10,
+      "numerical_reference": 9,
+      "review_analysis": 14
+    },
+    "numerical_csvs": 69,
+    "reference_files": 9,
+    "steps": [
+      {
+        "script": "experiments/revision_20260929_r3/analyze.py",
+        "log": "logs/01_analyze.log"
+      },
+      {
+        "script": "experiments/revision_20260929_r3/independent_audit.py",
+        "log": "logs/02_independent_audit.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/analyze.py",
+        "log": "logs/03_analyze.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/verify.py",
+        "log": "logs/04_verify.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/negative_checks.py",
+        "log": "logs/05_negative_checks.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/quantile_analysis.py",
+        "log": "logs/06_quantile_analysis.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/quantile_verify.py",
+        "log": "logs/07_quantile_verify.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/quantile_negative_checks.py",
+        "log": "logs/08_quantile_negative_checks.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/study_manifest.py",
+        "log": "logs/09_study_manifest.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/diagnostic.py",
+        "log": "logs/10_diagnostic.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/diagnostic_verify.py",
+        "log": "logs/11_diagnostic_verify.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/diagnostic_checks.py",
+        "log": "logs/12_diagnostic_checks.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/second_review_checks.py",
+        "log": "logs/13_second_review_checks.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/numerical_audit.py",
+        "log": "logs/14_numerical_audit.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/senior_reasoning_checks.py",
+        "log": "logs/15_senior_reasoning_checks.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/review_analysis.py",
+        "log": "logs/16_review_analysis.log"
+      },
+      {
+        "script": "experiments/revision_20260930_r4/review_check.py",
+        "log": "logs/17_review_check.log"
+      }
+    ],
+    "scope": "Processed-input numerical reproduction; manuscript, typeset tables, figure comparisons and upstream training/scoring are excluded."
+  },
+  "finite_input_sensitivity": {
+    "status": "PASS",
+    "independent_effect_intervals": 40320,
+    "controls": 84,
+    "fits": 25344,
+    "decisions": 5968512,
+    "scenarios": 1584,
+    "fixtures": [
+      "within/across checkpoint ties, 45 cap fixtures",
+      "strict lower/upper equality",
+      "simultaneous gains/losses",
+      "unchanged detected set",
+      "80 fixed-cap deletion checks",
+      "invalid remaining indices rejected"
+    ],
+    "producer_rejection_checks": 6,
+    "stable_only_fitting": "PASS",
+    "factor_formula_membership_missing_path_checks": "PASS",
+    "protocol_sha256": "2c31f9fdcfd10f4c5e1a7bd5cbce852741fd5f14176dfcdfb32335f65aef7a2c",
+    "scope": "Independent complete replay of every sensitivity scenario and all exact effect intervals; deterministic rerun is a separate byte-comparison check."
+  },
+  "preservation": "All existing input and output hash expectations unchanged; 14 additive review result files match across original and clean-export reruns.",
+  "limits": "Processed-input reproduction only. Finite-input scenario counts are not probabilities, confidence intervals or worst-case guarantees. No training, simulation, raw scoring, detector fitting, staging, commit, push or external submission."
+}

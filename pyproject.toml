@@ -1,0 +1,58 @@
+[project]
+name = "rl-hanbat"
+version = "0.1.0"
+description = "Locked Hopper identification and raw-feature detector gates"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+    "gymnasium[mujoco]==1.3.0",
+    "joblib==1.5.1",
+    "matplotlib==3.10.5",
+    "mujoco==3.10.0",
+    "numpy==2.3.2",
+    "pandas==2.3.1",
+    "pyarrow==21.0.0",
+    "pyyaml==6.0.2",
+    "scikit-learn==1.7.1",
+    "scipy==1.16.1",
+    "stable-baselines3==2.9.0",
+    "tabulate==0.9.0",
+    "torch==2.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "mypy==1.17.1",
+    "pytest==8.4.1",
+    "pytest-cov==6.2.1",
+    "ruff==0.12.7",
+    "types-pyyaml==6.0.12.20250516",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rl_hanbat"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+extend-exclude = ["archive/20260803_detector_line_v1/tracked_snapshot_ac04202"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+packages = ["rl_hanbat"]
+exclude = ["tests/"]
+warn_unused_ignores = false
+ignore_missing_imports = true
+warn_return_any = false
